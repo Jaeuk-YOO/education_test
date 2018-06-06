@@ -1,0 +1,128 @@
+<div class="container">
+    <div class="row">
+        <div class="col-6" id="card1">
+            <img src="https://d1u5p3l4wpay3k.cloudfront.net/hearthstone_gamepedia/3/39/Card_back-Golden_Celebration.png?" style="width:100%;">
+        </div>
+        <div class="col-12" id="card_detail1" style="display:none;">
+        <br>
+            <h3>한국어 도우미에게 과제를 도와달라고 요청해볼까요?</h3>
+            <button type="button" class="btn btn-primary" id="card_detail_button1">처음으로</button>
+        </div>
+        <div class="col-6" id="card2">
+            <img src="https://d1u5p3l4wpay3k.cloudfront.net/hearthstone_gamepedia/3/39/Card_back-Golden_Celebration.png?" style="width:100%;">
+        </div>
+        <div class="col-12" id="card_detail2" style="display:none;">
+        <br>
+            <h3>친구에게 어떤 식당에서 밥을 먹을지 추천해달라고 요청해볼까요?</h3>
+            <button type="button" class="btn btn-primary" id="card_detail_button2">처음으로</button>
+        </div>
+        <div class="col-6" id="card3">
+            <img src="https://d1u5p3l4wpay3k.cloudfront.net/hearthstone_gamepedia/3/39/Card_back-Golden_Celebration.png?" style="width:100%;">
+        </div>
+        <div class="col-12" id="card_detail3" style="display:none;">
+        <br>
+            <h3>점원에게 커피 위에 올라가는 휘핑크림을 빼달라고 요청해볼까요?</h3>
+            <button type="button" class="btn btn-primary" id="card_detail_button3">처음으로</button>
+        </div>
+        <div class="col-6" id="card4">
+            <img src="https://d1u5p3l4wpay3k.cloudfront.net/hearthstone_gamepedia/3/39/Card_back-Golden_Celebration.png?" style="width:100%;">
+        </div>
+        <div class="col-12" id="card_detail4" style="display:none;"><br>
+            <h3>인쇄 가게 아저씨께 인쇄하는 방법을 알려달라고 요청해볼까요?</h3>
+            <button type="button" class="btn btn-primary" id="card_detail_button4">처음으로</button>
+        </div>
+        <div class="col-6" id="card5">
+            <img src="https://d1u5p3l4wpay3k.cloudfront.net/hearthstone_gamepedia/3/39/Card_back-Golden_Celebration.png?" style="width:100%;">
+        </div>
+        <div class="col-12" id="card_detail5" style="display:none;"><br>
+            <h3>교수님께 과제 기간을 늘려달라고 요청해볼까요?</h3>
+            <button type="button" class="btn btn-primary" id="card_detail_button5">처음으로</button>
+        </div>
+        <div class="col-6" id="card6">
+            <img src="https://d1u5p3l4wpay3k.cloudfront.net/hearthstone_gamepedia/3/39/Card_back-Golden_Celebration.png?" style="width:100%;">
+        </div>
+        <div class="col-12" id="card_detail6" style="display:none;"><br>
+            <h3>팀원에게 네이버naver 검색하는 방법을 알려달라고 요청해볼까요?</h3>
+            <button type="button" class="btn btn-primary" id="card_detail_button6">처음으로</button>
+        </div>
+    </div>
+</div>
+
+<script>
+$('#card1').click(function(){
+    $('#card2').css("visibility","hidden");
+    $('#card3').css("visibility","hidden");
+    $('#card4').css("visibility","hidden");
+    $('#card5').css("visibility","hidden");
+    $('#card6').css("visibility","hidden");
+
+    $('#card_detail_button1').addClass("vis_hid");
+    $('#card_detail1').slideDown("fast"); 
+});
+$('#card2').click(function(){
+    $('#card1').css("visibility","hidden");
+    $('#card3').css("visibility","hidden");
+    $('#card4').css("visibility","hidden");
+    $('#card5').css("visibility","hidden");
+    $('#card6').css("visibility","hidden");
+
+    $('#card_detail_button2').addClass("vis_hid");
+    $('#card_detail2').slideDown("fast"); 
+});
+$('#card3').click(function(){
+    $('#card2').css("visibility","hidden");
+    $('#card1').css("visibility","hidden");
+    $('#card4').css("visibility","hidden");
+    $('#card5').css("visibility","hidden");
+    $('#card6').css("visibility","hidden");
+
+    $('#card_detail_button3').addClass("vis_hid");
+    $('#card_detail3').slideDown("fast"); 
+});
+$('#card4').click(function(){
+    $('#card2').css("visibility","hidden");
+    $('#card1').css("visibility","hidden");
+    $('#card3').css("visibility","hidden");
+    $('#card5').css("visibility","hidden");
+    $('#card6').css("visibility","hidden");
+
+    $('#card_detail_button4').addClass("vis_hid");
+    $('#card_detail4').slideDown("fast"); 
+});
+$('#card5').click(function(){
+    $('#card2').css("visibility","hidden");
+    $('#card1').css("visibility","hidden");
+    $('#card4').css("visibility","hidden");
+    $('#card3').css("visibility","hidden");
+    $('#card6').css("visibility","hidden");
+
+    $('#card_detail_button5').addClass("vis_hid");
+    $('#card_detail5').slideDown("fast"); 
+});
+$('#card6').click(function(){
+    $('#card2').css("visibility","hidden");
+    $('#card1').css("visibility","hidden");
+    $('#card4').css("visibility","hidden");
+    $('#card5').css("visibility","hidden");
+    $('#card3').css("visibility","hidden");
+
+    $('#card_detail_button6').addClass("vis_hid");
+    $('#card_detail6').slideDown("fast"); 
+});
+
+$('button').click(function(){
+    $('#card2').css("visibility","visible");
+    $('#card1').css("visibility","visible");
+    $('#card4').css("visibility","visible");
+    $('#card5').css("visibility","visible");
+    $('#card3').css("visibility","visible");
+    $('#card6').css("visibility","visible");
+
+    $('#card_detail1').slideUp("fast"); 
+    $('#card_detail2').slideUp("fast"); 
+    $('#card_detail3').slideUp("fast");
+    $('#card_detail4').slideUp("fast"); 
+    $('#card_detail5').slideUp("fast");              
+    $('#card_detail6').slideUp("fast"); 
+});
+</script>
